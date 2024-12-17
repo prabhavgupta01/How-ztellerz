@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/marketPlace.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <title>How'ztellerz</title>
+</head>
+
+<body>
+    <nav>
+        <div id="outer-nav">
+            <div id="inner-nav">
+                <div id="nav">
+                    <a href="../index.html" id="nav-logo">
+                        <img src="../images/logo.jpg" alt="" id="logo">
+                        <h2>ow'ztellerz</h2>
+                    </a>
+                    <button id="logout" type="button">
+                        <img src="../images/logout.svg" alt="">
+                        <p>logout</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div id="outer-main-page">
+            <div id="main-page1" class="main-page">
+                <ul id="inner-main-page1">
+                    <li id="inner-main-page1-ele1" class="inner-main-page1-ele">
+                        Home</li>
+                    <li id="inner-main-page1-ele2" class="inner-main-page1-ele">
+                        Chips</li>
+                    <li id="inner-main-page1-ele3" class="inner-main-page1-ele">
+                        Drinks</li>
+                    <li id="inner-main-page1-ele4" class="inner-main-page1-ele">
+                        Biscuits</li>
+                    <li id="inner-main-page1-ele5" class="inner-main-page1-ele">
+                        Others</li>
+                    <li id="inner-main-page1-ele7" class="inner-main-page1-ele">
+                        Profile</li>
+                    <button id="inner-main-page1-ele6" class="inner-main-page1-ele">
+                        <img src="../images/plusIcon.svg" alt="">
+                        <p id="add-item">Add item</p>
+                    </button>
+                </ul>
+            </div>
+            <div id="main-page2" class="main-page">
+                <div id="inner-main2-page1" class="inner-main2-page">
+                    <form action="">
+                        <select name="hostel" id="filterHostelName">
+                            <option value="" selected>Choose hostel</option>
+                            <option value="Archimedes A">Archimedes A</option>
+                            <option value="Archimedes B">Archimedes B</option>
+                            <option value="Armstrong">Armstrong</option>
+                            <option value="Aristotle">Aristotle</option>
+                            <option value="Columbus">Columbus</option>
+                            <option value="Franklin A">Franklin A</option>
+                            <option value="Franklin B">Franklin B</option>
+                            <option value="IBN">IBN</option>
+                            <option value="Marcopolo">Marcopolo</option>
+                            <option value="Megalan">Megalan</option>
+                            <option value="Nightingale">Nightingale</option>
+                            <option value="Pie">Pie</option>
+                            <option value="Vasco">Vasco</option>
+                        </select>
+                        <select name="floor" id="filterFloorNum">
+                            <option value="" selected>Choose floor</option>
+                            <option value="1">Floor 1</option>
+                            <option value="2">Floor 2</option>
+                            <option value="3">Floor 3</option>
+                            <option value="4">Floor 4</option>
+                            <option value="5">Floor 5</option>
+                            <option value="6">Floor 6</option>
+                            <option value="7">Floor 7</option>
+                            <option value="8">Floor 8</option>
+                            <option value="9">Floor 9</option>
+                        </select>
+                        <button type="submit" id="filterApply">Apply</button>
+                    </form>
+                    <button id="filter-btn">Filter</button>
+                </div>
+                <div id="inner-main2-page2" class="inner-main2-page">
+                    <!-- <li id="outer-card1" class="outer-cars" data-name="Blue Chips" data-price="30" data-floor="1"
+                        data-room="104" data-hostel-name="Hostel 1" data-category="chips" data-seller="username"
+                        data-contact="1234567891" data-imageURL="../images/chips.png">
+                        <img src="../images/chips.png" alt="">
+                        <p>Blue Chips</p>
+                        <p>30 Rs.</p>
+                        <div>
+                            <button class="details-button">Details</button>
+                            <button class="removeItemBtn">
+                                <img src="../images/delete.svg" alt="">
+                            </button>
+                        </div>
+                    </li> -->
+                    <ul id="profile-sideBar2" class="inner-sideBar2">
+                        <li id="inner-profile-sideBar2-ele1" class="inner-profile-sideBar2-ele">
+                            <li id="inner-profile-pic" class="inner-profile">
+                                <img src="../images/profileIcon.svg" alt="">
+                            </li>
+                            <li id="inner-profile-username" class="inner-profile">
+                                <h2>@<span id="profile-username">username</span></h2>
+                                <p>
+                                    <span id="rollno">roll no.</span> <span id="hostelName">hostel name</span>
+                                </p>
+                            </li>
+                        </li>
+                        <li id="inner-profile-sideBar2-ele2" class="inner-profile-sideBar2-ele">
+                            <li id="posts-head">
+                                <h2>Posts</h2>
+                            </li>
+                            <li id="posts">
+                                <ul id="inner-posts">
+                                </ul>
+                            </li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Add item form pop up -->
+
+
+    <section id="add-item-box">
+        <div id="inner-add-item-box">
+            <div id="add-item-box1" class="add-item-box">
+                <button id="add-item-box-close">
+                    <img src="../images/cross.svg" alt="">
+                </button>
+            </div>
+            <div id="add-item-box2" class="add-item-box">
+                <form action="">
+                    <input type="text" id="product-name" class="formInput" placeholder="Enter product name">
+                    <input type="text" id="product-price" class="formInput" placeholder="Enter product price">
+                    <select id="product-category" class="formInput" name="productCategory" id="">
+                        <option value="" selected>Product category</option>
+                        <option value="chips">Chips</option>
+                        <option value="drinks">Drinks</option>
+                        <option value="biscuits">Biscuits</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <div>
+                        <label for="image-input">Product image :</label>
+                        <input id="product-img" type="file" accept="image/*" id="image-input" name="image-input">
+                    </div>
+                    <button id="add-item-form-btn" type="button">Add Item</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!--Product detail pop-up -->
+
+    <section id="details-box">
+        <div id="inner-details-box">
+            <div id="detail-box1" class="detail-box">
+                <button id="detail-box-close">
+                    <img src="../images/cross.svg" alt="">
+                </button>
+            </div>
+            <div id="detail-box2" class="detail-box">
+                <ul id="inner1-detail-box2" class="inner-detail-box2">
+                    <img id="product-Img" src="" alt="">
+                </ul>
+                <ul id="inner2-detail-box2" class="inner-detail-box2">
+                    <li id="detail-box2-ele1" class="detail-box2-ele">
+                        <h2>Product details :-</h2>
+                        <p id="productName">Blue Chips</p>
+                        <p><span id="productPrice"></span> Rs.</p>
+                    </li>
+                    <li id="detail-box2-ele2" class="detail-box2-ele">
+                        <h2>Seller details :-</h2>
+                        <p>Name : <span id="SellerName"></span> </p>
+                        <p>Contact no. : <span id="SellerContact"></span> </p>
+                        <p>Hostel Name : <span id="hostel-Name"></span></p>
+                        <p>Floor : <span id="floorNum"></span> </p>
+                        <p>Room no. : <span id="roomNum"></span> </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter in Mobile screen -->
+
+    <section id="filter-box">
+        <div id="inner-filter-box">
+            <div id="filter-close-btn">
+                <button id="filter-box-close">
+                    <img src="../images/cross.svg" alt="">
+                </button>
+            </div>
+            <form action="">
+                <select name="hostel" id="filterHostelName">
+                    <option value="" selected>Choose hostel</option>
+                    <option value="Archimedes A">Archimedes A</option>
+                    <option value="Archimedes B">Archimedes B</option>
+                    <option value="Armstrong">Armstrong</option>
+                    <option value="Aristotle">Aristotle</option>
+                    <option value="Columbus">Columbus</option>
+                    <option value="Franklin A">Franklin A</option>
+                    <option value="Franklin B">Franklin B</option>
+                    <option value="IBN">IBN</option>
+                    <option value="Marcopolo">Marcopolo</option>
+                    <option value="Megalan">Megalan</option>
+                    <option value="Nightingale">Nightingale</option>
+                    <option value="Pie">Pie</option>
+                    <option value="Vasco">Vasco</option>
+                </select>
+                <select name="floor" id="filterFloorNum">
+                    <option value="" selected>Choose floor</option>
+                    <option value="" selected>Choose floor</option>
+                    <option value="1">Floor 1</option>
+                    <option value="2">Floor 2</option>
+                    <option value="3">Floor 3</option>
+                    <option value="4">Floor 4</option>
+                    <option value="5">Floor 5</option>
+                    <option value="6">Floor 6</option>
+                    <option value="7">Floor 7</option>
+                    <option value="8">Floor 8</option>
+                    <option value="9">Floor 9</option>
+                </select>
+                <button type="submit">Apply</button>
+            </form>
+        </div>
+    </section>
+
+
+
+    <script src="../js/marketplace.js"></script>
+</body>
+
+</html>
